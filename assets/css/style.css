@@ -1,0 +1,350 @@
+/*****************************************
+Common css start
+******************************************/
+* {
+	padding: 0%;
+	margin: 0%;
+}
+
+/* logo google font */
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
+body{
+	overflow-x: hidden;
+}
+h3 {
+	font-size: clamp(1.4rem, 3.4vw, 4.5rem);
+}
+a {
+	text-decoration: none;
+}
+/* p {
+	font-size: clamp(0.9rem, 2vw, 1.3rem);
+} */
+
+/*****************************************
+Common css end
+******************************************/
+
+
+
+
+
+
+
+/*****************************************
+ Navbar css start 
+*****************************************/
+.navbar {
+	background-color: #17d122;
+}
+.navbar-brand {
+
+}
+.nav-item {
+	position: relative;
+	padding: 10px;
+}
+.nav-item a, .dropbtn {
+	color: white;
+	font-weight: bold;
+}
+
+.nav-item::after {
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 4px;
+	background-color: white;
+	bottom: 0px;
+	left: 0px;
+	transition: 0.4s;
+}
+.nav-item:hover::after {
+	width: 100%;
+}
+.dropbtn {
+	background-color: #04aa6d00;
+	/* color: black; */
+	/* padding: 16px; */
+	font-size: 16px;
+	border: none;
+  }
+  
+.dropdown {
+	position: relative;
+	display: inline-block;
+	padding: 7px;
+}
+  
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	top: 50px;
+}
+  
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown-container:hover .dropdown-content {display: block;}
+
+
+
+/*****************************************
+Navbar css end 
+*****************************************/
+
+
+
+
+
+  
+/*****************************************
+ home page style start 
+ *****************************************/
+#home-banner{
+    background-image: url('../images/matthieu-dixte-ONanvin0ZgI-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+	width: 100%;
+    height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.home-text-container {
+	max-width: 550px;
+	width: 95%;
+	margin-right: 0px;
+}
+.home p {
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+	font-size: clamp(0.9rem, 2vw, 1.3rem);
+}
+.home button {
+	font-weight: 600;
+	font-size: clamp(0.8rem, 1.5vw, 1rem);
+	padding: 15px 40px;
+	margin-right: 7px;
+	border: 0px solid #0000ff00;
+	border-radius: 5px;
+	margin-top: 10px;
+	position: relative;
+	z-index: 1;
+	box-shadow: -1px 2px 30px -7px rgba(0,0,0,0.75);
+}
+.home button::after {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	background-color: #17d122;
+	top: 0%;
+	left: 0%;
+	border-radius: 5px;
+	transition: 0.4s;
+	z-index: -1;
+}
+.home button:hover::after {
+	width: 100%;
+}
+.home button:hover {
+	color: white;
+}
+/*****************************************
+ home page style ends
+ *****************************************/
+
+
+
+
+
+
+ /*****************************************
+ Best seller style start
+ *****************************************/
+ .best-seller-links a {
+	 color: black;
+	 font-weight: bold;
+	 transition: 0.3s;
+ }
+ .best-seller-links a:hover {
+	color: #17d122;
+}
+.box {
+	width: 450px;
+	height: 380px;
+	/* box-shadow: 2px 2px 30px rgba(0,0,0,.2); */
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f7f7f7;
+	color: black;
+}
+
+.slide-img img {
+	width: 100%;
+	height: auto;
+	/* height: 350px; */
+	position: relative;
+}
+.slide-img p {
+	margin-top: 50px;
+	font-weight: 500;
+}
+.detail-box p {
+	font-size: clamp(0.6rem, 1.5vw, 0.79rem);
+}
+/* .slide-img img{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+} */
+
+.detail-box{
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.type{
+	display: flex;
+	flex-direction: column;
+}
+.type a{
+	color: #222222;
+	margin: 5px 0px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+     padding-right:8px ;
+     text-decoration: none;
+}
+
+.type span{
+	color: rgba(26,26,26,0.5);
+}
+
+.price{
+	color: #333333;
+	font-weight: 600;
+	font-size: 1.1rem;
+	letter-spacing: 0.5px;
+	text-decoration: none;
+}
+.slider{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: whitesmoke;
+}
+#btn-mid a{
+	text-align: center;
+}
+/*****************************************
+ Best seller style end 
+ *****************************************/
+
+
+
+
+
+
+
+
+/*****************************************
+ vision style start 
+ *****************************************/
+#vision{
+	background: linear-gradient(156.65deg, #92A3BB 0.61%, #BDC7D5 36.45%, #C6D2E2 61.16%, #7289AB 101.84%) 
+}
+#carouselExampleDark{
+	width: 50%;
+}
+/* more about style  */
+#more-about{
+	background-image: url('../images/sean-pollock-PhYq704ffdA-unsplash.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 300px;
+	padding: 30px 0px 30px 0px;
+	position: relative;
+	z-index: 2;
+}
+#more-about::after {
+	content: "";
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: #0000007a;
+	z-index: -1;
+}
+.more a{
+	text-decoration: underline;
+	color: white;
+}
+
+#footer-main{
+	background-color: #17d122;
+	height: 500px;
+}
+/*****************************************
+ vision style end 
+ *****************************************/
+
+
+
+
+
+
+
+
+
+/*****************************************
+ Men's glasses page style start 
+ *****************************************/
+.men-glasses-carousel {
+	margin: 0px 5px;
+	width: 100%;
+	background-color: #eeeeee;
+	margin-bottom: 24px;
+	padding-top: 20px;
+}
+
+
+
+/*****************************************
+ Men's glasses page style start 
+ *****************************************/
+
+
+/* mobail screen  */
+@media screen and (max-width:767px){
+	.home{
+		width: 100%;
+		
+	}
+	
+}
